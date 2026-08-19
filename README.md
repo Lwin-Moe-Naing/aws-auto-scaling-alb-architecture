@@ -69,10 +69,10 @@ To validate the elasticity of the architecture, a synthetic load was generated o
 
 With 4 instances running, refreshing the ALB's DNS URL demonstrated successful load balancing. The ALB routed HTTP requests across different availability zones and instances, confirmed by the varying Private IPs displayed on the web page.
 
-**Routing to Instance A:**
+**Routing to Instance 1:**
 ![ALB Route 1](images/10-alb-ip-1.png)
 
-**Routing to Instance B:**
+**Routing to Instance 2:**
 ![ALB Route 2](images/11-alb-ip-2.png)
 
 **Routing to Instance 3:**
@@ -80,5 +80,6 @@ With 4 instances running, refreshing the ALB's DNS URL demonstrated successful l
 
 **Routing to Instance 4:**
 ![ALB Route 4](images/13-alb-ip-4.png)
+
 ---
 *Project completed as a practical demonstration of AWS infrastructure deployment, monitoring, and cloud troubleshooting.*

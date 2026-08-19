@@ -1,3 +1,4 @@
+[日本語版 (Japanese Version)](./README_ja.md)
 #  AWS High-Availability Web Infrastructure: Auto Scaling & ALB
 
 This repository documents the end-to-end deployment, real-world troubleshooting, and stress-testing of a highly available web architecture on AWS. The project utilizes an **Application Load Balancer (ALB)** to distribute traffic across a dynamic pool of EC2 instances managed by an **Auto Scaling Group (ASG)**, with automated scaling policies triggered by **Amazon CloudWatch**.
@@ -34,7 +35,7 @@ In real-world cloud environments, misconfigurations happen. Here is how network 
 ![Unhealthy Targets](images/03-target-group-unhealthy.png)
 
 * **Resolution:** Enabled `Auto-assign public IPv4 address` on the subnets and replaced the instances.
-![Auto Assign IP](images/04-auto-assign-ip.png)
+![Auto Assign IP](images/04-auto-assign-ip1.png)
 
 * **Result:** Instances successfully bootstrapped, passed the AWS `2/2 status checks`, and automatically registered as Healthy to serve traffic.
 
@@ -74,5 +75,10 @@ With 4 instances running, refreshing the ALB's DNS URL demonstrated successful l
 **Routing to Instance B:**
 ![ALB Route 2](images/11-alb-ip-2.png)
 
+**Routing to Instance 3:**
+![ALB Route 3](images/12-alb-ip-3.png)
+
+**Routing to Instance 4:**
+![ALB Route 4](images/13-alb-ip-4.png)
 ---
 *Project completed as a practical demonstration of AWS infrastructure deployment, monitoring, and cloud troubleshooting.*

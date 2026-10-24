@@ -1,6 +1,8 @@
 [日本語版 (Japanese Version)](./README_ja.md)
 #  AWS High-Availability Web Infrastructure: Auto Scaling & ALB
 
+![Architecture Diagram](autoscaling.drawio.png)
+
 This repository documents the end-to-end deployment, real-world troubleshooting, and stress-testing of a highly available web architecture on AWS. The project utilizes an **Application Load Balancer (ALB)** to distribute traffic across a dynamic pool of EC2 instances managed by an **Auto Scaling Group (ASG)**, with automated scaling policies triggered by **Amazon CloudWatch**.
 
 ---

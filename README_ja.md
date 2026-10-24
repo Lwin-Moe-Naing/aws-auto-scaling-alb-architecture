@@ -7,6 +7,9 @@
 ---
 
 ## アーキテクチャの概要
+### アーキテクチャ図
+<img src="images/autoscaling.drawio.png" width="500">
+
 * **VPC:** 高可用性を確保するため、2つのアベイラビリティゾーン（AZ）に跨るカスタムVPCを構築。
 * **Auto Scaling:** Target Tracking Policy (CPU使用率 <= 50%) に基づく動的スケーリング（最小: 2、最大: 4）。
 * **Load Balancing:** 正常なEC2ターゲットへトラフィックをルーティングするインターネット向けALB。
